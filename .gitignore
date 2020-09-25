@@ -1,0 +1,13 @@
+
+.cache/
+coverage/
+dist/*
+!dist/index.html
+node_modules/
+*.log
+.github/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
