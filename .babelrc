@@ -1,0 +1,54 @@
+{
+  "presets": ["@babel/preset-env", "@babel/preset-react"],
+  "plugins": [
+    [
+      "babel-plugin-root-import",
+      {
+        "paths": [
+          {
+            "rootPathSuffix": "./src/assets/images",
+            "rootPathPrefix": "@images"
+          },
+          {
+            "rootPathSuffix": "./src/components/@covende-ui",
+            "rootPathPrefix": "@covende-ui"
+          },
+          {
+            "rootPathSuffix": "./src/assets",
+            "rootPathPrefix": "@assets"
+          },
+          {
+            "rootPathSuffix": "./src/components",
+            "rootPathPrefix": "@components"
+          },
+          {
+            "rootPathSuffix": "./src/constants",
+            "rootPathPrefix": "@constants"
+          },
+          {
+            "rootPathSuffix": "./src/helpers",
+            "rootPathPrefix": "@helpers"
+          },
+          {
+            "rootPathSuffix": "./src/layouts",
+            "rootPathPrefix": "@layouts"
+          },
+          {
+            "rootPathSuffix": "./src/pages",
+            "rootPathPrefix": "@pages"
+          },
+          {
+            "rootPathSuffix": "./src/redux",
+            "rootPathPrefix": "@redux"
+          },
+          {
+            "rootPathSuffix": "./src/services",
+            "rootPathPrefix": "@services"
+          }
+        ]
+      }
+    ],
+    "@babel/plugin-proposal-class-properties",
+    // "@babel/plugin-transform-runtime"
+  ]
+}
