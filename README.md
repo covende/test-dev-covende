@@ -40,8 +40,9 @@ src
 │
 └───redux
 │   │
-│   └───[redux section]
+│   └───[Redux section]
 │   │   *Ajustes del redux*
+│   │   [Redux saga files]
 │
 └───routes
 │   │   *Todas las rutas del sistema*
