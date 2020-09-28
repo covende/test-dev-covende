@@ -7,8 +7,8 @@ import {Role as GlobalRole} from '../helpers/role';
 import {PrivateRoute} from './PrivateRoute';
 
 // Home
-const Home = React.lazy(() => import('@pages/Publics/Home'));
-const About = React.lazy(() => import('@pages/Publics/Home'));
+const Home = React.lazy(() => import('@pages/publics/Home'));
+const About = React.lazy(() => import('@pages/publics/Home'));
 // const NotFound = React.lazy(() => import('@pages/Publics/Error404'));
 
 // Autorización
