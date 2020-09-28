@@ -1,10 +1,8 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 
-import Typography from '@covende-ui/Typography';
 import Link from '@covende-ui/Link';
 
 // Subsecciones
@@ -32,7 +30,7 @@ const SeccionItem = styled.p`
 `;
 
 const FooterSections = styled.div`
-  padding: 30px 80px;
+  padding: 75px 80px;
   background-color: #011423;
   ${(props) => props.theme.mq.max.lg} {
     padding: 30px 0px 10px 0px;

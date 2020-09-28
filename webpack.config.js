@@ -127,7 +127,7 @@ function exportMainConfig(context) {
     };
   } else {
     // Prod
-    // baseConfig.plugins.push(new webpack.optimize.OccurrenceOrderPlugin());
+    baseConfig.plugins.push(new webpack.optimize.OccurrenceOrderPlugin());
   }
 
   return baseConfig;
