@@ -14,7 +14,7 @@ function exportMainConfig(context) {
   const baseConfig = {
     entry: './src/index.js',
     output: {
-      path: path.resolve(__dirname, 'dist'),
+      path: path.resolve(__dirname, 'build'),
       filename: '[name].covende.js',
     },
     module: {
@@ -25,12 +25,7 @@ function exportMainConfig(context) {
           loader: 'babel-loader',
           options: {
             presets: [
-              [
-                '@babel/preset-env',
-                {
-                  modules: false,
-                },
-              ],
+              ['@babel/preset-env'],
               '@babel/react',
               {
                 plugins: ['@babel/plugin-proposal-class-properties'],
@@ -65,10 +60,10 @@ function exportMainConfig(context) {
       }),
       new LodashModuleReplacementPlugin(),
       new webpack.ContextReplacementPlugin(/moment[\/\\]locale$/, /en/),
-      new BundleAnalyzerPlugin({
-        analyzerMode: 'static',
-        openAnalyzer: false,
-      }),
+      // new BundleAnalyzerPlugin({
+      //   analyzerMode: 'static',
+      //   openAnalyzer: false,
+      // }),
       new MiniCssExtractPlugin(),
       // new MiniCssExtractPlugin({
       //   filename: "[name].css",
@@ -81,9 +76,9 @@ function exportMainConfig(context) {
     //   runtimeChunk: true,
     //   splitChunks: {
     //     cacheGroups: {
-    //       vendor: {
+    //       commons: {
     //         test: /[\\/]node_modules[\\/]/,
-    //         name: 'js/vendors',
+    //         name: 'vendor',
     //         chunks: 'all',
     //       },
     //     },
@@ -113,8 +108,8 @@ function exportMainConfig(context) {
             name: 'vendor/corejs',
           }
         },
-      },
-    },
+      }
+    }
   };
 
   if (mode === 'development') {
