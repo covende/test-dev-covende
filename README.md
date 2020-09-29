@@ -1,9 +1,3 @@
-<p style="text-align: center">
-  <a href="https://covende.com/" target="blank">
-    <img src="assets/images/Logo-CoVende.png" width="320" alt="Covende Logo" />
-  </a>
-</p>
-  
 # FRONTEND
 
 ## Tecnologias usadas 🛠️
