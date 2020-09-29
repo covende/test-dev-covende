@@ -4,7 +4,7 @@ import withLayout from '@components/Layout';
 import {allFlattenRoutes as routes} from './index';
 
 // Helpers
-import NotFound from '@pages/Publics/Error404';
+import NotFound from '@pages/publics/Error404';
 import {getLoggedInUser} from '@helpers/authUtils';
 
 const currentUser = getLoggedInUser();

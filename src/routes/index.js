@@ -9,7 +9,7 @@ import {PrivateRoute} from './PrivateRoute';
 // Home
 const Home = React.lazy(() => import('@pages/publics/Home'));
 const About = React.lazy(() => import('@pages/publics/Home'));
-// const NotFound = React.lazy(() => import('@pages/Publics/Error404'));
+// const NotFound = React.lazy(() => import('@pages/publics/Error404'));
 
 // Autorización
 // const Login = React.lazy(() => import('../pages/auth/Login'));
