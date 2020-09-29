@@ -36,7 +36,7 @@ export default function Home() {
         </BreadcumbsList>
       </Breadcumbs>
       <Main>
-        <div>Content</div>
+        <div>Hola desde el develop en AWS Amplify</div>
       </Main>
     </>
   );
